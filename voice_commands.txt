@@ -1,0 +1,80 @@
+tello-magic voice commands:
+
+context:
+  expressions:
+    land:
+      - 'land'
+    
+    tracking:
+      - 'activate tracking'
+      - 'track me'
+      - 'follow me'
+    
+    notracking:
+      - 'deactivate tracking'
+      -' stop tracking'
+      - 'don't track me'
+    
+    keepdistance:
+      - "[keep, lock] distance"
+      - 'stay [with me, close]'
+    
+    picture:
+      - 'take a picture off $picturetarget:pic_target'
+      - 'take a photo off $picturetarget:pic_target'
+    
+    comeback:
+      - 'come back (to me)'
+      - 'come home (to me)'
+    
+    palmland:
+      - 'land on my palm'
+      - 'land on my hand'
+    
+    keepdistanceoff:
+      - 'stop keeping distance'
+      - 'free tracking mode'
+      - 'don't keep distance'
+    
+    takeoff:
+      - 'takeoff'
+
+    NOT YET IMPLEMENTED:
+    --------------------------------
+    flip:
+      - (do a) flip $flipdir:direction
+    move:
+      - "[move, go, fly] $pv.TwoDigitInteger:amount centimeters (to the)
+        $movespeed:direction"
+      - "[move, go, fly] a little (to the) $movespeed:direction"
+    
+    video:
+      - $videoState:state (a) video
+    rotate:
+      - rotate $pv.TwoDigitInteger:degrees degrees $rotatedir:dir
+    --------------------------------
+
+  slots:
+    picturetarget:
+      - me
+      - the guitar
+      - the orange
+      - the chair
+    flipdir:
+      - forwards
+      - backwards
+      - left
+      - right
+    movespeed:
+      - right
+      - left
+      - up
+      - down
+      - backwards
+      - forwards
+    videoState:
+      - start
+      - stop
+    rotatedir:
+      - clockwise
+      - counterclockwise

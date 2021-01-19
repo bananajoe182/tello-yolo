@@ -1,0 +1,9 @@
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+train: H:/Machine_Learning/Repos/Tello_Dataset/images/train/
+val: H:/Machine_Learning/Repos/Tello_Dataset/images/val/
+
+# number of classes
+nc: 6
+
+# class names
+names: ['Orange' ,'Person' ,'Guitar' ,'Human hand' ,'Human head', 'Chair']

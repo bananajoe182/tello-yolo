@@ -1,0 +1,3 @@
+output_video/
+media/
+yolov5/weights/tello_custom.pt
