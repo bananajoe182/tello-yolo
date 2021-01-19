@@ -60,29 +60,31 @@ Before you start: With **"ESC"** you can always abort and land immediately. With
 
 #### Quickstart:
 
-1. If your setup is correct, all packages installed, microphone (Bluetooth headphone also works) is plugged in and you are connected to your tello via wifi, open a terminal and start the main process (takes ~ 15 sec to start up): 
+1. Unrar yolo5/weights/tello_custom.pt (tello_custom.part1 & part2)
+
+2. If your setup is correct, all packages installed, microphone (Bluetooth headphone also works) is plugged in and you are connected to your tello via wifi, open a terminal and start the main process (takes ~ 15 sec to start up): 
 
    --> python tello_magic.py
 
-2. If there are no errors you should see the drones video feed with HUD information in a separate window after a little while
+3. If there are no errors you should see the drones video feed with HUD information in a separate window after a little while
 
-3. You can start the drone with [TAB] on the keyboard or by saying "takeoff"
+4. You can start the drone with [TAB] on the keyboard or by saying "takeoff"
 
-4. You can control the drone with Q,W,E,A,S,D and the arrow keys. To land the drone, press ESC or say "land".
+5. You can control the drone with Q,W,E,A,S,D and the arrow keys. To land the drone, press ESC or say "land".
 
-5. If you say "follow me", the drone will track your head and by saying "lock distance", the drone always tries to keep the current distance 
+6. If you say "follow me", the drone will track your head and by saying "lock distance", the drone always tries to keep the current distance 
 
-6. You can even say "take a picture of a guitar" and the drone will autonomously search for a guitar, approach it and take a picture
+7. You can even say "take a picture of a guitar" and the drone will autonomously search for a guitar, approach it and take a picture
 
    This is currently limited to 6 objects (person, hand, head, orange, guitar, chair) .
-   
-7. In distance tracking mode, you can raise your hand to the height of your head to move the drone to the left or right
 
-8. Say "land" or "palm land" to land the drone on the floor or on your hand
+8. In distance tracking mode, you can raise your hand to the height of your head to move the drone to the left or right
+
+9. Say "land" or "palm land" to land the drone on the floor or on your hand
 
 Note: For further commands and actions look at the voice_commands.txt file
 
-#### Details:
+### Details:
 
 **tello_magic.py**
 
@@ -116,7 +118,7 @@ The parameters of the PIDs may depend on the processing speed and need tuning to
 
 
 
-#### Potential Addons for the Future:
+### Potential Addons for the Future:
 
 - Adding Visual Odometry for monocular camera systems like OrbSlam2 for 3D positioning or even collision detection 
 - Adding Realtime Audio Noise Filter to reduce drone noise in mic
